@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/664a642cf0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    <div class="container">
+        <button><a href="index.html"><span>BACK TO HOME</span></a></button>
+        <div class="gallery">
+            <div class="full-img" id="fullimgbox">
+              <img src="images/img1 (1).jpeg" id="fullimg">
+              <span onclick="closefullimg()"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+        <div class="img-w">
+            <div class="img-w"><img src="images/img1 (1).jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img01.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img1.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img2.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img04.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img4.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img5.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img6.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img8.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img9(1).jpeg" onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img9.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img11.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img12.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img13.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img03.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img02.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img15.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img16.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img17.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img19.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img20.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img21.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img23.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img24.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img25.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img27.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img28.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img29.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img31.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img32.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img33.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img35.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img36.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/imgin1.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img1n2.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img1n3.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img1n4.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img1n6.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img1n7.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img37.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img39.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img40.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img41.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img43.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img44.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img47.jpeg"  onclick="openfullimg(this.src)">
+            <div class="img-w"><img src="images/img48.jpeg"  onclick="openfullimg(this.src)">
+        </div>
+    </div>
+    <script>
+
+        var fullimgbox = document.getElementById("fullimgbox");
+        var fullimg = document.getElementById("fullimg");
+
+
+         function openfullimg(pic){
+            fullimgbox.style.display = "flex";
+            fullimg.src = pic;
+        }
+        function closefullimg(){
+            fullimgbox.style.display = "none";
+        }
+    </script>
+</body>
+</html>

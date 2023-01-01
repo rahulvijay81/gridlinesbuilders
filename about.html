@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/664a642cf0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="bg-about">
+        <div>
+            <nav>
+                <h3><span>G</span>rid <span>L</span>ines<br><a href="index.html">Builders</a></h3>
+    
+                <ul class="bar" id="sidemenu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="projects.html">GALLERY</a></li>
+                    <li><a href="service.html">SERVICES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <i class="fa-solid fa-xmark" onClick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onClick="openmenu()"></i>
+            </nav>
+        </div>
+        <div class="aboutxt">
+            <h1>ABOUT US</h1>
+            <p>
+                Grid Lines Builders was founded on 2018,Our Designs & Constructions based on kerala Municipality building rules of government for final approval from authority.We have done almost 40+ villas,buildings completed in tirur region.Our strong work ethic, steadfast attention to detail, and no-nonsense attitude all combine to ensure that every phase of the building process runs smoothly.
+                The functionality and aesthetics of your custom home are our utmost priority and we pride ourselves on realizing your vision for a home that perfectly reflects your unique taste, needs, and lifestyle. With a well-earned reputation for making construction easy for our clients, we’re committed to delivering a seamless home building process.</p>
+        </div>
+    </div>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+    
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+       </script>
+</body>
+</html>

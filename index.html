@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gridlinesbuilders</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <script src="https://kit.fontawesome.com/664a642cf0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="bg">
+        <div>
+            <nav>
+                <h3><span>G</span>rid <span>L</span>ines<br><a href="index.html">Builders</a></h3>
+    
+                <ul class="bar" id="sidemenu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="projects.html">GALLERY</a></li>
+                    <li><a href="service.html">SERVICES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <i class="fa-solid fa-xmark" onClick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onClick="openmenu()"></i>
+            </nav>
+        </div>
+
+        <div class="textpara">
+            <p>READY TO TURN <br> YOUR DREAM HOME <br> INTO A REALITY ?</p>
+        </div>
+        <div class="btn">
+            <button><a href="tel:+919995751164">Let's start a conversation</a></button>
+        </div>
+
+        <div class="mail-contact">
+            <p><a href="mailto:haridas1122@yahoo.com"><i class="fa-solid fa-envelope"></i> haridas1122@yahoo.com</a></p>
+        </div>
+        <div class="socail-media">
+            <a href="https://www.facebook.com/haridas.tirur.7"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com/haridas_tirur?igshid=Yzg5MTU1MDY="><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/+919995751164"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+
+    </div>
+ <script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemeu.style.right = "0";
+    }
+    function closemenu() {
+        sidemeu.style.right = "-200px";
+    }
+   </script>
+</body>
+</html>
