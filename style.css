@@ -68,12 +68,13 @@ nav ul li:hover::after {
 .textpara {
   color: #fff;
   font-size: 40px;
+  padding-top: 50px;
   padding-left: 250px;
   letter-spacing: 3px;
   font-family: "Times New Roman", Times, serif;
-  text-shadow: 5px;
 }
 .btn {
+  padding-top: 50px;
   padding-left: 250px;
 }
 .btn button {
@@ -94,7 +95,7 @@ nav ul li:hover::after {
 }
 .mail-contact {
   padding-left: 60px;
-  padding-top: 40px;
+  padding-top: 100px;
 }
 .mail-contact p a {
   text-decoration: none;
