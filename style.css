@@ -1,31 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #191919;
+  --logo-color: #f01313;
+  --font-family: "Poppins";
+  --logo-color: #f01313;
+  --logo-color: #f01313;
+  --logo-color: #f01313;
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 .bg {
+  position: relative;
   width: 100%;
-  height: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
-    url(images/background2.jpg);
+    url(images/background2.jpg) !important;
   background-size: cover;
   background-position: center;
 }
 nav h3 {
   font-size: 32px;
-  color: #fff;
+  color: var(--primary-color);
   letter-spacing: 1px;
-  font-family: "Poppins", sans-serif;
+  line-height: 30px;
+  font-family: var(--font-family);
 }
 nav h3 span {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-family);
   font-size: 35px;
-  color: #f01313;
+  color: var(--logo-color);
 }
 nav h3 a {
   text-decoration: none;
-  color: #fff;
+  color: var(--primary-color);
   letter-spacing: 3px;
   font-family: Arial, sans-serif;
   font-size: 28px;
@@ -33,9 +47,9 @@ nav h3 a {
 }
 nav {
   display: flex;
-  width: 90%;
+  width: 85%;
   margin: auto;
-  padding: 10px;
+  padding: 1rem;
   align-items: center;
   justify-content: space-between;
 }
@@ -47,16 +61,16 @@ nav ul li {
 }
 nav ul li a {
   font-size: 16px;
-  color: #fff;
+  color: var(--primary-color);
   letter-spacing: 2px;
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-family);
 }
 nav ul li::after {
   content: "";
   height: 3px;
   width: 0;
-  background: #fff;
+  background: var(--primary-color);
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -67,50 +81,52 @@ nav ul li:hover::after {
 }
 .textpara {
   color: #fff;
-  font-size: 40px;
-  padding-top: 50px;
-  padding-left: 250px;
-  letter-spacing: 3px;
+  font-size: 2.6rem;
+  margin-left: 16rem;
+  margin-top: 10rem;
+  letter-spacing: 1px;
   font-family: "Times New Roman", Times, serif;
 }
 .btn {
-  padding-top: 50px;
-  padding-left: 250px;
+  margin-top: 1rem;
+  margin-left: 16rem;
 }
 .btn button {
-  width: 280px;
-  height: 45px;
+  width: 300px;
+  height: 50px;
   background: none;
-  border: solid 2px #f7f3f2;
-  color: #fff;
+  border: solid 2px var(--primary-color);
+  color: var(--primary-color);
 }
 .btn button a {
   text-decoration: none;
-  letter-spacing: 2px;
-  color: #fff;
+  letter-spacing: 1px;
+  color: var(--primary-color);
   text-align: center;
   font-size: 16px;
   text-shadow: 5px;
   font-family: "Times New Roman", Times, serif;
 }
-.mail-contact {
-  padding-left: 60px;
-  padding-top: 100px;
+.footer-section {
+  width: 100%;
+  padding-inline: 4rem;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  bottom: 10px;
 }
 .mail-contact p a {
   text-decoration: none;
-  color: #fff;
+  color: var(--primary-color);
   letter-spacing: 2px;
 }
-.socail-media {
-  float: right;
-  padding-right: 80px;
-  margin-top: -18px;
-}
 .socail-media a i {
-  color: #fff;
+  color: var(--primary-color);
   letter-spacing: 25px;
-  font-size: 22px;
+  font-size: 1.5rem;
   position: relative;
 }
 .socail-media a i:hover {
@@ -132,17 +148,17 @@ nav ul li:hover::after {
   margin: auto;
   background: #e6e6e6;
   border-radius: 8px;
-  box-shadow: 0 0 40px -10px #000;
+  box-shadow: 0 0 40px -10px var(--secondary-color);
   padding: 10px 30px;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-family);
   position: relative;
 }
 .contact-page h2 {
   padding-bottom: 10px;
   width: 200px;
-  color: #191919;
-  border-bottom: 3px solid #191919;
+  color: var(--secondary-color);
+  border-bottom: 3px solid var(--secondary-color);
 }
 .contact-page input {
   width: 100%;
@@ -152,7 +168,7 @@ nav ul li:hover::after {
   outline: none;
   resize: none;
   border: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-family);
   transition: all 0.3s;
   border-bottom: 2px solid #bbb;
 }
@@ -170,7 +186,7 @@ nav ul li:hover::after {
   float: right;
   padding: 10px 50px;
   margin: 40px 0 0;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-family);
   border: 2px solid #78788c;
   background: 0;
   color: #78788c;
@@ -179,7 +195,7 @@ nav ul li:hover::after {
 }
 .contact-page button:hover {
   background: #78788c;
-  color: #fff;
+  color: var(--secondary-color);
 }
 .contact-page div {
   content: "";
@@ -187,19 +203,19 @@ nav ul li:hover::after {
   bottom: -15px;
   right: -20px;
   background: #50505a;
-  color: #fff;
+  color: var(--primary-color);
   width: 350px;
   padding: 16px 4px 16px 0;
   border-radius: 6px;
   font-size: 13px;
-  box-shadow: 10px 10px 40px -14px #000;
+  box-shadow: 10px 10px 40px -14px var(--secondary-color);
 }
 .contact-page div span {
   margin: 0 15px 0 25px;
 }
 .contact-page div a {
   text-decoration: none;
-  color: #fff;
+  color: var(--primary-color);
 }
 
 .container {
@@ -207,38 +223,11 @@ nav ul li:hover::after {
     url(images/background2.jpg);
   background-size: cover;
   background-position: center;
-  padding-right: 60px;
-  padding-top: 20px;
-}
-.container button {
-  width: 150px;
-  border-radius: 20px;
-  height: 30px;
-  background: transparent;
-  color: #fff;
-  border: 1px solid;
-  cursor: pointer;
-  transition: 0.5s;
-  margin-left: 10px;
-  margin-bottom: 10px;
-}
-.container button a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 14px;
-  text-align: center;
-}
-.container button:hover {
-  background-color: #fff;
-  color: #191919;
-  border: none;
-}
-.container button a:hover {
-  color: #000;
-  background-color: #fff;
 }
 .gallery {
+  width: 98%;
   display: flex;
+  margin: 1.5rem auto;
 }
 .imglist {
   display: flex;
@@ -281,59 +270,60 @@ nav ul li:hover::after {
 
 .bg2 {
   width: 100%;
-  height: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
-    url(images/background2.jpg);
+    url(images/background2.jpg) !important;
   background-size: cover;
   background-position: center;
-  padding-top: 10px;
 }
 .bg2 h1 {
+  padding-top: 1rem;
   text-align: center;
   color: #fff;
   padding-bottom: 5px;
   letter-spacing: 1px;
 }
 .card {
-  width: 95%;
-  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: auto;
   background: #fff;
   background: rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5.7px);
   -webkit-backdrop-filter: blur(5.7px);
-  margin: auto;
-  border-radius: 5px;
+  margin: 1rem auto;
+  border-radius: 8px;
 }
 .box {
-  width: 300px;
+  width: 30%;
   height: 350px;
   background: #f7f3f2;
-  float: left;
   justify-content: space-between;
   margin: 50px;
   border-radius: 10px;
 }
 .box img {
-  width: 300px;
+  width: 100%;
   height: 180px;
 }
 .box h3 {
   margin: 10px;
   text-align: center;
-  font-size: 22px;
+  font-size: 1.5rem;
   letter-spacing: 1px;
-  font-family: "Poppins", sans-serif;
-  color: #191919;
+  font-family: var(--font-family);
+  color: var(--secondary-color);
 }
 .box p {
-  text-align: justify;
+  text-align: center;
   padding-top: 5px;
   padding-right: 5px;
   padding-left: 5px;
   font-size: 14px;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-family);
   letter-spacing: 1px;
 }
 .btn1 {
@@ -373,8 +363,7 @@ nav .fa-solid {
 
 .bg-about {
   width: 100%;
-  height: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(images/background2.jpg);
   background-size: cover;
@@ -384,16 +373,19 @@ nav .fa-solid {
   text-align: center;
   color: #fff;
   letter-spacing: 1px;
-  padding-top: 10px;
-  font-family: "Poppins";
+  padding-top: 5rem;
+  font-family: var(--font-family);
 }
 .aboutxt p {
-  font-size: 20px;
-  padding: 10px 50px;
+  font-size: 0.9rem;
+  padding: 1rem 10rem;
   text-align: justify;
 }
 
 @media only screen and (max-width: 600px) {
+  nav {
+    width: 100%;
+  }
   nav .fa-solid {
     display: block;
     font-size: 30px;
@@ -440,28 +432,27 @@ nav .fa-solid {
     font-weight: 100;
   }
   .textpara {
-    font-size: 38px;
-    padding-left: 20px;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    margin-top: 8rem;
   }
   .card {
-    width: 350px;
-    height: 93%;
-    margin: auto;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
   }
   .box {
     width: 300px;
-    height: 420px;
-    float: left;
-    margin-left: 25px;
-  }
-  .box img {
-    width: 300px;
-    height: 260px;
+    margin: 2rem auto;
   }
   .btn {
-    padding-left: 30px;
-    padding-top: 50px;
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
+  .footer-section {
+    padding-inline: 1rem;
+    padding-bottom: 0rem;
   }
   .btn button {
     width: 280px;
@@ -472,13 +463,6 @@ nav .fa-solid {
   }
   .mail-contact {
     font-size: 12px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-  }
-  .socail-media {
-    float: right;
-    padding-right: 10px;
-    margin-top: -40px;
   }
   .socail-media a i {
     letter-spacing: 12px;
@@ -503,7 +487,7 @@ nav .fa-solid {
   }
   .bg2 {
     width: 100%;
-    height: 1520px;
+    height: 100%;
   }
 
   .btn1 {
@@ -511,17 +495,17 @@ nav .fa-solid {
     padding-bottom: 10px;
   }
   .aboutxt {
-    font-size: 16px;
-    letter-spacing: 2px;
-    max-width: max-content;
-  }
+    padding-top: 1rem;
+    letter-spacing: 1px;
+}
   .bg-about {
     width: 100%;
     min-height: 1100px;
     max-height: 100%;
   }
   .aboutxt p {
-    font-size: 15px;
+    text-align: center;
+    padding: 1rem 1rem;
   }
 }
 

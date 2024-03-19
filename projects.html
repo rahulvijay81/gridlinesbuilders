@@ -11,7 +11,22 @@
 </head>
 <body>
     <div class="container">
-        <button><a href="index.html"><span>BACK TO HOME</span></a></button>
+        <div>
+            <nav>
+                <h3><span>G</span>rid <span>L</span>ines<br><a href="index.html">Builders</a></h3>
+    
+                <ul class="bar" id="sidemenu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="projects.html">GALLERY</a></li>
+                    <li><a href="service.html">SERVICES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <i class="fa-solid fa-xmark" onClick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onClick="openmenu()"></i>
+            </nav>
+        </div>
+
         <div class="gallery">
             <div class="full-img" id="fullimgbox">
               <img src="images/img1 (1).jpeg" id="fullimg">
@@ -81,6 +96,16 @@
         function closefullimg(){
             fullimgbox.style.display = "none";
         }
+
+        //navbar functionality
+      var sidemeu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemeu.style.right = "0";
+      }
+      function closemenu() {
+        sidemeu.style.right = "-200px";
+      }
     </script>
 </body>
 </html>
